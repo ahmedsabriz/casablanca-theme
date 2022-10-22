@@ -71,5 +71,12 @@
   "text_font_description": "Font for body text",
   "text_font_label": "Text Font",
   "visited_link_color_description": "Text color for visited link elements",
-  "visited_link_color_label": "Visited link color"
+  "visited_link_color_label": "Visited link color",
+  "sunshine_custom_objects": "Sunshine Custom Objects",
+  "show_user_related_object_records_description": "Show related Sunshine object records in user profile",
+  "show_user_related_object_records_label": "Show user related custom objects",
+  "relationship_type_key_description": "Name (key) of the relationship between user and custom object",
+  "relationship_type_key_label": "Relationship Type",
+  "identifying_property_description": "Name of the property that identifies each record",
+  "identifying_property_label": "Identifying property"
 }

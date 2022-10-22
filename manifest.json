@@ -1,7 +1,7 @@
 {
-  "name": "Copenhagen",
-  "author": "Zendesk",
-  "version": "2.19.1",
+  "name": "Casablanca",
+  "author": "ROCA",
+  "version": "2.19.2",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -401,6 +401,32 @@
           "description": "request_list_beta_description",
           "label": "request_list_beta_label",
           "value": false
+        }
+      ]
+    },
+    {
+      "label": "sunshine_custom_objects",
+      "variables": [
+        {
+          "identifier": "show_user_related_object_records",
+          "type": "checkbox",
+          "description": "show_user_related_object_records_description",
+          "label": "show_user_related_object_records_label",
+          "value": true
+        },
+        {
+          "identifier": "relationship_type_key",
+          "type": "text",
+          "description": "relationship_type_key_description",
+          "label": "relationship_type_key_label",
+          "value": "user_has_devices"
+        },
+        {
+          "identifier": "identifying_property",
+          "type": "text",
+          "description": "identifying_property_description",
+          "label": "identifying_property_label",
+          "value": "Name"
         }
       ]
     }
