@@ -110,13 +110,18 @@
             let headers = new Headers();
             headers.append("Accept", "application/json");
             let options = { headers };
-            let url = "/api/sunshine/objects/records/zen:user:" + {{user.id}} + "/related/" + {{settings.relationship_type_key}};
+            let url = "/api/sunshine/objects/records/zen:user:{{user.id}}/related/{{settings.relationship_type_key}}";
             fetch(url, options).then(
               (res) => {
-                res.data.forEach((record) => {
-                  document.querySelector("#objectRecords").append(
-                    "<li>" + record.attributes[{{settings.identifying_property}}] + "</li>"
-                  );
+                return res.text();
+              }
+            ).then(
+              (text) => {
+                let json = JSON.parse(text);
+                json.data.forEach((record) => {
+                  let li = document.createElement("li");
+                  li.append(record.attributes["{{settings.identifying_property}}"]);
+                  document.querySelector("#objectRecords").append(li);
                 });
               }
             );
