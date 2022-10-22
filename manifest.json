@@ -408,10 +408,10 @@
       "label": "sunshine_custom_objects",
       "variables": [
         {
-          "identifier": "show_user_related_object_records",
+          "identifier": "show_object_records",
           "type": "checkbox",
-          "description": "show_user_related_object_records_description",
-          "label": "show_user_related_object_records_label",
+          "description": "show_object_records_description",
+          "label": "show_object_records_label",
           "value": true
         },
         {
