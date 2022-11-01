@@ -1,7 +1,7 @@
 {
-  "name": "Copenhagen",
-  "author": "Zendesk",
-  "version": "2.19.1",
+  "name": "Copenhagen with 2 widgets",
+  "author": "ROCA",
+  "version": "2.19.2",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -403,6 +403,18 @@
           "value": false
         }
       ]
-    }
+    },
+    {
+        "label": "second_widget",
+        "variables": [
+          {
+            "identifier": "enable_second_widget",
+            "type": "checkbox",
+            "description": "enable_second_widget_description",
+            "label": "enable_second_widget_label",
+            "value": true
+          }
+        ]
+      }
   ]
 }
