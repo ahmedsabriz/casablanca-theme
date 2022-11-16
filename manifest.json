@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen with 2 widgets",
   "author": "ROCA",
-  "version": "2.19.4",
+  "version": "2.19.5",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -419,7 +419,7 @@
             "type": "text",
             "description": "restricted_locale_description",
             "label": "restricted_locale_label",
-            "value": "fr"
+            "value": "English (US)"
         }
       ]
     }
