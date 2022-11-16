@@ -74,5 +74,7 @@
   "visited_link_color_label": "Visited link color",
   "second_widget": "Second Widget",
   "enable_second_widget_label": "Enable Second Widget",
-  "enable_second_widget_description": "Allows a widget from different brand to be embedded"
+  "enable_second_widget_description": "Allows a widget from different brand to be embedded",
+  "restricted_locale_label": "Restrict to locale",
+  "restricted_locale_description": "Only display second widget when user local is set to this locale"
 }

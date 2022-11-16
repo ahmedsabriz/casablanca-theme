@@ -5183,7 +5183,8 @@ html[dir="rtl"] .notification-left-aligned {
   border: none;
 }
 
-/* Start custom styles */
+/* Start Call Widget Customisation
+ahmed@roca.work */
 .second-widget-trigger {
   display: inline-block;
 }
@@ -5315,4 +5316,4 @@ html[dir="rtl"] .notification-left-aligned {
   margin-right: calc(-.5 * var(--bs-offcanvas-padding-x));
   margin-bottom: calc(-.5 * var(--bs-offcanvas-padding-y));
 }
-/* End custom styles */
+/* End Call Widget Customisation */

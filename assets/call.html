@@ -1,56 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Call Uss</title>
-    <style>
-        iframe html .jydXAI {
-            display: none;
-        }
-    </style>
     <script id="ze-snippet"
         src="https://static.zdassets.com/ekr/snippet.js?key=c9a23ca9-a8be-47e4-8909-a142943f1cb4"> </script>
 </head>
 
-<body style="margin-left: 0px; margin-right: 0px;">
-    <div id="call-widget-spinner">
-        <style>
-            @keyframes spinner {
-                0% {
-                    transform: translate3d(-50%, -50%, 0) rotate(0deg);
-                }
-
-                100% {
-                    transform: translate3d(-50%, -50%, 0) rotate(360deg);
-                }
-            }
-
-            .call-widget-spinner::before {
-                animation: 1.5s linear infinite spinner;
-                animation-play-state: inherit;
-                border: solid 5px #cfd0d1;
-                border-bottom-color: #1c87c9;
-                border-radius: 50%;
-                content: "";
-                height: 40px;
-                width: 40px;
-                position: absolute;
-                top: 40%;
-                left: 50%;
-                transform: translate3d(-50%, -50%, 0);
-                will-change: transform;
-            }
-        </style>
-        <div class="call-widget-spinner"></div>
-        <p style="position: absolute; text-align: center; top: 50%; width: 100%;">Loading... Please wait!</p>
-    </div>
+<body>
     <script>
+        let webWidgetInitialised = false;
         zE('webWidget:on', 'userEvent', function (event) {
-            if (event.action === 'Web Widget Opened') {
-                document.getElementById('call-widget-spinner').style.display = 'None';
+            if (event.action === 'Talk Shown') {
+                !webWidgetInitialised && parent.postMessage("widget.initiated", "*");
+                webWidgetInitialised = true;
             }
         });
         zE('webWidget', 'open');

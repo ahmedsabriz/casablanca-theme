@@ -480,4 +480,15 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Start Call Widget Customisation
+  // ahmed@roca.work
+  window.addEventListener("message", function (message) {
+    if (message.data == "widget.initiated") {
+      document.querySelectorAll(".second-widget-trigger").forEach((trigger) => {
+        trigger.style.display = "inline-block";
+      });
+    }
+  });
+  // End Call Widget Customisation
 });

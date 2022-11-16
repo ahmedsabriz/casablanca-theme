@@ -1,7 +1,7 @@
 {
   "name": "Copenhagen with 2 widgets",
   "author": "ROCA",
-  "version": "2.19.2",
+  "version": "2.19.4",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -405,16 +405,23 @@
       ]
     },
     {
-        "label": "second_widget",
-        "variables": [
-          {
-            "identifier": "enable_second_widget",
-            "type": "checkbox",
-            "description": "enable_second_widget_description",
-            "label": "enable_second_widget_label",
-            "value": true
-          }
-        ]
-      }
+      "label": "second_widget",
+      "variables": [
+        {
+          "identifier": "enable_second_widget",
+          "type": "checkbox",
+          "description": "enable_second_widget_description",
+          "label": "enable_second_widget_label",
+          "value": true
+        },
+        {
+            "identifier": "restricted_locale",
+            "type": "text",
+            "description": "restricted_locale_description",
+            "label": "restricted_locale_label",
+            "value": "fr"
+        }
+      ]
+    }
   ]
 }
